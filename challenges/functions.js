@@ -18,13 +18,13 @@ function consume(first, second, cb) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-// const add = (num1, num2) => {
-//   return num1 + num2;
-// } 
-function add(num1, num2) {
+const add = (num1, num2) => {
   return num1 + num2;
+} 
+// function add(num1, num2) {
+//   return num1 + num2;
   
-}
+// }
 
 const multiply = (num3, num4) => {
   return num3 * num4;
@@ -37,29 +37,29 @@ const greeting = (firstName, lastName) => {
 
 
 
-/* Step 3: Check your work by un-commenting the following calls to consume(): */
+// /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
 consume(10,16,multiply); // 160
 consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
-// ==== Closures ==== 
+// // ==== Closures ==== 
 
-// Explain in your own words why `nestedfunction()` can access the variable `internal`.
+// // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: with closures variables are passed down to nested functions which allows the nested function to use
-// the varible.
+// // Explanation: with closures variables are passed down to nested functions which allows the nested function to use
+// // the varible.
 
 
-// const external = "I'm outside the function";
+// // const external = "I'm outside the function";
 
-// function myFunction() {
-//   console.log(external);
-//   const internal = "Hello! I'm inside myFunction!";
+// // function myFunction() {
+// //   console.log(external);
+// //   const internal = "Hello! I'm inside myFunction!";
 
-//   function nestedFunction() {
-//     console.log(internal);
-//   };
-//   nestedFunction();
-// }
-// myFunction();
+// //   function nestedFunction() {
+// //     console.log(internal);
+// //   };
+// //   nestedFunction();
+// // }
+// // myFunction();
